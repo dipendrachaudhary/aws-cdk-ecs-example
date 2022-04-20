@@ -1,0 +1,1236 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "cdk-stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://885300287765/us-east-1",
+      "properties": {
+        "templateFile": "cdk-stack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/cdk-stack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "repositoryName": "aws-cdk/assets",
+              "imageTag": "aeb74dae87eefc4a1d095b666faa6616b16b1b6734841a72d19395cedf6877b0",
+              "id": "aeb74dae87eefc4a1d095b666faa6616b16b1b6734841a72d19395cedf6877b0",
+              "packaging": "container-image",
+              "path": "asset.aeb74dae87eefc4a1d095b666faa6616b16b1b6734841a72d19395cedf6877b0",
+              "sourceHash": "aeb74dae87eefc4a1d095b666faa6616b16b1b6734841a72d19395cedf6877b0"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddDockerImageAsset (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:23)",
+              "LegacyStackSynthesizer.addDockerImageAsset (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:103:19)",
+              "FargateDemoStack.addDockerImageAsset (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stack.ts:690:29)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:108:53",
+              "withoutDeprecationWarnings (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:218:12)",
+              "LegacyStackSynthesizer.addDockerImageAsset (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:108:14)",
+              "new DockerImageAsset (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.ts:314:40)",
+              "AssetImage.bind (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.ts:29:19)",
+              "new ContainerDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:485:36)",
+              "FargateTaskDefinition.addContainer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:590:12)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:144:45)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCA239B1BD",
+            "trace": [
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1309:21)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet1SubnetBBAD7A71",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1659:20)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1874:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet1RouteTableC8D17B8C",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1677:19)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1874:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet1RouteTableAssociationD065F8E9",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1683:5)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1874:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet1DefaultRouteB1E44C48",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1699:19)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1362:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:46)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet1EIPFF3D64E1",
+            "trace": [
+              "PublicSubnet.addNatGateway (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1886:40)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:237:27)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1446:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1368:14)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet1NATGatewayED807FD2",
+            "trace": [
+              "PublicSubnet.addNatGateway (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1884:17)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:237:27)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1446:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1368:14)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet2Subnet6A7AE5ED",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1659:20)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1874:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet2RouteTable8BD8339A",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1677:19)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1874:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet2RouteTableAssociation463D46C7",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1683:5)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1874:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPublicSubnet2DefaultRouteF2C5C85D",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1699:19)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1362:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:46)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet1Subnet942896B4",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1659:20)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1912:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1510:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet1RouteTableBD0A0662",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1677:19)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1912:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1510:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet1RouteTableAssociationC8B7B81B",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1683:5)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1912:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1510:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet1DefaultRouteA47B93A8",
+            "trace": [
+              "PrivateSubnet.addRoute (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1745:19)",
+              "NatGatewayProvider.configureSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:251:12)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:244:12)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1446:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1368:14)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet2SubnetDF206FEE",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1659:20)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1912:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1510:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet2RouteTable33947164",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1677:19)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1912:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1510:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet2RouteTableAssociation0413D3D0",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1683:5)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1912:5)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1510:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1476:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1471:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1343:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCPrivateSubnet2DefaultRoute0A24C782",
+            "trace": [
+              "PrivateSubnet.addRoute (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1745:19)",
+              "NatGatewayProvider.configureSubnet (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:251:12)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:244:12)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1446:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1368:14)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCIGWD375262D",
+            "trace": [
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1350:19)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeVPCVPCGWD6FB05E7",
+            "trace": [
+              "new Vpc (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:19)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/youtubeCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "youtubeCluster06FF0684",
+            "trace": [
+              "new Cluster (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:219:21)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:17:21)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceLBBBFF014A",
+            "trace": [
+              "new BaseLoadBalancer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.ts:219:22)",
+              "new ApplicationLoadBalancer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:86:5)",
+              "new ApplicationLoadBalancedServiceBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:431:48)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:119:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceLBSecurityGroupF099B8E4",
+            "trace": [
+              "new SecurityGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:466:26)",
+              "new ApplicationLoadBalancer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:93:52)",
+              "new ApplicationLoadBalancedServiceBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:431:48)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:119:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/LB/SecurityGroup/to cdkstackbackendServiceSecurityGroup50637DF1:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceLBSecurityGrouptocdkstackbackendServiceSecurityGroup50637DF18083CFBA4B",
+            "trace": [
+              "SecurityGroup.addEgressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:110:7)",
+              "SecurityGroup.addEgressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:515:13)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:134:23",
+              "ReactiveList.forEachAndForever (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:270:7)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:133:45",
+              "ReactiveList.forEachAndForever (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:270:7)",
+              "Connections.allowTo (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:132:26)",
+              "Connections.allowFrom (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:164:25)",
+              "ApplicationListener.registerConnectable (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:440:29)",
+              "ApplicationTargetGroup.registerConnectable (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:229:16)",
+              "Object.attachToApplicationTargetGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:629:21)",
+              "FargateService.attachToApplicationTargetGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:589:43)",
+              "ApplicationTargetGroup.addTarget (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:177:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:537:22)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:178:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceLBPublicListener1CF813B9",
+            "trace": [
+              "new BaseListener (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.ts:109:22)",
+              "new ApplicationListener (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:191:5)",
+              "ApplicationLoadBalancer.addListener (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:109:22)",
+              "new ApplicationLoadBalancedServiceBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:447:34)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:119:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceLBPublicListenerECSGroupB242A3B9",
+            "trace": [
+              "new TargetGroupBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.ts:252:21)",
+              "new ApplicationTargetGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:128:5)",
+              "ApplicationListener.addTargets (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:353:19)",
+              "new ApplicationLoadBalancedServiceBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:453:38)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:119:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceLoadBalancerDNSF9558DFA",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:519:5)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:119:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceServiceURL9B42ABBA",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:520:5)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:119:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceTaskDefTaskRoleDA417223",
+            "trace": [
+              "new Role (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:358:18)",
+              "new TaskDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:426:39)",
+              "new FargateTaskDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.ts:135:5)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:129:29)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceTaskDef7172E970",
+            "trace": [
+              "new TaskDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:445:21)",
+              "new FargateTaskDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.ts:135:5)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:129:29)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceTaskDefwebLogGroup42417116",
+            "trace": [
+              "new LogGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-logs/lib/log-group.ts:405:22)",
+              "AwsLogDriver.bind (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.ts:118:44)",
+              "new ContainerDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:489:44)",
+              "FargateTaskDefinition.addContainer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:590:12)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:144:45)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceTaskDefExecutionRoleE539272F",
+            "trace": [
+              "new Role (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:358:18)",
+              "FargateTaskDefinition.obtainExecutionRole (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:661:29)",
+              "AssetImage.bind (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.ts:34:67)",
+              "new ContainerDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:485:36)",
+              "FargateTaskDefinition.addContainer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:590:12)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:144:45)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceTaskDefExecutionRoleDefaultPolicyDF8B3E80",
+            "trace": [
+              "new Policy (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:399:28)",
+              "Function.addToPrincipal (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Import.grant (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecr/lib/repository.ts:260:22)",
+              "Import.grantPull (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecr/lib/repository.ts:273:22)",
+              "AssetImage.bind (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.ts:34:22)",
+              "new ContainerDefinition (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:485:36)",
+              "FargateTaskDefinition.addContainer (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:590:12)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:144:45)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendService138D1988",
+            "trace": [
+              "new BaseService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:438:21)",
+              "new FargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.ts:137:5)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:160:20)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceSecurityGroup76C82F37",
+            "trace": [
+              "new SecurityGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:466:26)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:848:25)",
+              "new FargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.ts:156:10)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:160:20)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/backendService/Service/SecurityGroup/from cdkstackbackendServiceLBSecurityGroup1CEF4EBF:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceSecurityGroupfromcdkstackbackendServiceLBSecurityGroup1CEF4EBF80429F71BF",
+            "trace": [
+              "SecurityGroup.addIngressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:92:7)",
+              "SecurityGroup.addIngressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:483:13)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:157:23",
+              "ReactiveList.forEachAndForever (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:270:7)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:156:45",
+              "ReactiveList.forEachAndForever (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:270:7)",
+              "Connections.allowFrom (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:155:26)",
+              "ApplicationListener.registerConnectable (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:440:29)",
+              "ApplicationTargetGroup.registerConnectable (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:229:16)",
+              "Object.attachToApplicationTargetGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:629:21)",
+              "FargateService.attachToApplicationTargetGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:589:43)",
+              "ApplicationTargetGroup.addTarget (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:177:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:537:22)",
+              "new ApplicationLoadBalancedFargateService (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:178:10)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:22:28)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/loadBalancerUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadBalancerUrl",
+            "trace": [
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:39:5)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/cdk-stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:646:26)",
+              "process.emit (node:events:526:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/home/dipendra/DevOps/cdk/ecs-example/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "cdk-stack"
+    }
+  }
+}
