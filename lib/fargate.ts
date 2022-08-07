@@ -29,6 +29,8 @@ export class FargateDemoStack extends cdk.Stack {
         environment: {
           myVar: "variable01",
         },
+        containerPort: 9005,
+        containerName: "test",
       },
     });
 

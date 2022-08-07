@@ -781,10 +781,10 @@
             ]
           }
         ],
-        "/cdk-stack/backendService/LB/SecurityGroup/to cdkstackbackendServiceSecurityGroup50637DF1:80": [
+        "/cdk-stack/backendService/LB/SecurityGroup/to cdkstackbackendServiceSecurityGroup50637DF1:9005": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "backendServiceLBSecurityGrouptocdkstackbackendServiceSecurityGroup50637DF18083CFBA4B",
+            "data": "backendServiceLBSecurityGrouptocdkstackbackendServiceSecurityGroup50637DF19005C02A67AF",
             "trace": [
               "SecurityGroup.addEgressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:110:7)",
               "SecurityGroup.addEgressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:515:13)",
@@ -992,10 +992,10 @@
             ]
           }
         ],
-        "/cdk-stack/backendService/TaskDef/web/LogGroup/Resource": [
+        "/cdk-stack/backendService/TaskDef/test/LogGroup/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "backendServiceTaskDefwebLogGroup42417116",
+            "data": "backendServiceTaskDeftestLogGroup2ABE741E",
             "trace": [
               "new LogGroup (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-logs/lib/log-group.ts:405:22)",
               "AwsLogDriver.bind (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.ts:118:44)",
@@ -1145,10 +1145,10 @@
             ]
           }
         ],
-        "/cdk-stack/backendService/Service/SecurityGroup/from cdkstackbackendServiceLBSecurityGroup1CEF4EBF:80": [
+        "/cdk-stack/backendService/Service/SecurityGroup/from cdkstackbackendServiceLBSecurityGroup1CEF4EBF:9005": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "backendServiceSecurityGroupfromcdkstackbackendServiceLBSecurityGroup1CEF4EBF80429F71BF",
+            "data": "backendServiceSecurityGroupfromcdkstackbackendServiceLBSecurityGroup1CEF4EBF90053655C890",
             "trace": [
               "SecurityGroup.addIngressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:92:7)",
               "SecurityGroup.addIngressRule (/home/dipendra/DevOps/cdk/ecs-example/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:483:13)",
@@ -1189,7 +1189,7 @@
             "type": "aws:cdk:logicalId",
             "data": "loadBalancerUrl",
             "trace": [
-              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:39:5)",
+              "new FargateDemoStack (/home/dipendra/DevOps/cdk/ecs-example/lib/fargate.ts:41:5)",
               "Object.<anonymous> (/home/dipendra/DevOps/cdk/ecs-example/bin/demo.ts:6:1)",
               "Module._compile (node:internal/modules/cjs/loader:1103:14)",
               "Module.m._compile (/home/dipendra/DevOps/cdk/ecs-example/node_modules/ts-node/src/index.ts:1056:23)",
